@@ -7,3 +7,14 @@ main:
     url: /tags/
   - title: "About"
     url: /about/
+
+docs:
+  - title: Hack The Box
+    children:
+      -title : "OpenKeyS"
+       url : /htb/openkeys/
+  
+  - title: Try Hack Me
+    children:
+      -title : "New Room"
+       url : /thm/room/
