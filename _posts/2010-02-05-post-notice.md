@@ -1,5 +1,6 @@
 ---
 title: "Post: Notice"
+author_profile: false
 categories:
   - Blog
 tags:
