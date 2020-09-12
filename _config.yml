@@ -101,6 +101,9 @@ defaults:
       related: true
       sidebar:
         nav: "docs"
+      toc: true
+      toc_label: "My Table of Contents"
+      toc_icon: "cog"
   # _pages
   - scope:
       path: "_pages"
@@ -116,6 +119,3 @@ tag_archive:
   type: liquid
   path: /tags/
 
-toc: true
-toc_label: "My Table of Contents"
-toc_icon: "cog"
