@@ -13,14 +13,8 @@ docs:
     children:
       - title: "Powershell Basics"
         url: /powershell/windows/powershell-basics/
-      # - title: "Structure"
-        # url: /docs/structure/
-      # - title: "Installation"
-        # url: /docs/installation/
-      # - title: "Upgrading"
-        # url: /docs/upgrading/
-
-
-
-
+  - title: Hack The Box
+    children:
+      - title: "Quick"
+        url: /htb/quick/
 
