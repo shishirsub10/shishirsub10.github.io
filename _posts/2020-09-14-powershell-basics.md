@@ -16,9 +16,10 @@ In cmd everything is interpreted as strings but not object.
 If I use `dir` then it will list all the folders not as folder but as a string.
 
 But with powershell, everything is object. That gives a lot of control to user for performing multiple tasks.
-```PS C:\users\century1> dir | Sort-Object -descending                                                                                                           
-                                                                                                                                                              
-                                                                                                                                                              
+
+```
+PS C:\users\century1> dir | Sort-Object descending                                                                                                         
+                         
     Directory: C:\users\century1                                                                                                                              
                                                                                                                                                               
                                                                                                                                                               
@@ -33,6 +34,7 @@ d-r---        7/16/2016   1:23 PM                Favorites
 d-r---        7/16/2016   1:23 PM                Downloads                                                                                                    
 d-r---        8/30/2018   3:09 AM                Documents                                                                                                    
 d-r---        7/16/2016   1:23 PM                Desktop 
+
 ```
 
 we could use dir here because it is an alias to powershell cmdlet get-childitem.
@@ -42,6 +44,7 @@ Powershell follows common verb-noun syntax. For example you want to create new o
 
 ### Powershell versions
 Up until powershell 5.1, they run on top of .NET Framework, but the current powershell which is v6 which runs on top of .NET core which is cross platform and can run on mac or linux boxes.
+
 ```
 PS C:\users\century1> $psversiontable                                                                                                                         
                                                                                                                                                               
