@@ -12,7 +12,7 @@ docs:
   - title: Powershell
     children:
       - title: "Powershell Basics"
-        url: /blog/powershell-basics/
+        url: /powershell/windows/powershell-basics/
       # - title: "Structure"
         # url: /docs/structure/
       # - title: "Installation"
