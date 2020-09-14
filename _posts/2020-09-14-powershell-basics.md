@@ -9,7 +9,7 @@ tags:
   - powershell
   - windows
   - beginner
-  ---
+---
 
 ## Powershell Fundamentals
 In cmd everything is interpreted as strings but not object.  
