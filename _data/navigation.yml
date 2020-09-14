@@ -17,4 +17,9 @@ docs:
     children:
       - title: "Quick"
         url: /htb/quick/
+  - title: Try Hack Me
+    children:
+      - title: "Harder"
+        url: /thm/harder/    
 
+        
