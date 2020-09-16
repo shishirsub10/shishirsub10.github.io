@@ -1,18 +1,20 @@
-
-> medium-to-markdown@0.0.3 convert /home/reddevil/node_modules/medium-to-markdown
-> node index.js "https://medium.com/@shishirsub10/tryhackme-help-bears-80961b2b551b"
-
-TryHackMe | Help Bears! Write Up
-================================
-
-[![Shishir Subedi](https://miro.medium.com/fit/c/96/96/0*7QP0iCr4FE1dJI10.jpg)](https://medium.com/@shishirsub10?source=post_page-----80961b2b551b----------------------)[Shishir Subedi](https://medium.com/@shishirsub10?source=post_page-----80961b2b551b----------------------)Follow[Aug 12](https://medium.com/@shishirsub10/tryhackme-help-bears-80961b2b551b?source=post_page-----80961b2b551b----------------------) · 5 min read
+---
+title: "Help Bears TryHackMe Write Up"
+last_modified_at: 2020-09-16T14:40:02-05:00
+categories:
+  - thm
+author_profile: false
+tags:
+  - Steganography
+  - Crypto
+---
 
 Link: [https://tryhackme.com/room/helpbears](https://tryhackme.com/room/helpbears)
 
 Introduction
 ------------
 
-<img alt="Image for post" class="t u v cb aj" src="https://miro.medium.com/max/2124/1\*rx1agjUj2iTBEk3qTge-KA.png" width="1062" height="445" srcSet="https://miro.medium.com/max/552/1\*rx1agjUj2iTBEk3qTge-KA.png 276w, https://miro.medium.com/max/1104/1\*rx1agjUj2iTBEk3qTge-KA.png 552w, https://miro.medium.com/max/1280/1\*rx1agjUj2iTBEk3qTge-KA.png 640w, https://miro.medium.com/max/1400/1\*rx1agjUj2iTBEk3qTge-KA.png 700w" sizes="700px"/>
+![i](https://miro.medium.com/max/700/1*rx1agjUj2iTBEk3qTge-KA.png)
 
 The introduction says that the BEARS need our help to solve a few challenges.
 
@@ -23,21 +25,21 @@ Download the file & get going…
 
 And the downloaded file contains:
 
-```
-É=-~-~\[\],ó=-~É,Ë=É<<É,þ=Ë+~\[\];Ì=(ó-ó)\[Û=(''+{})\[É+ó\]+(''+{})\[ó-É\]+(\[\].ó+'')\[ó-É\]+(!!''+'')\[ó\]+({}+'')\[ó+ó\]+(!''+'')\[ó-É\]+(!''+'')\[É\]+(''+{})\[É+ó\]+({}+'')\[ó+ó\]+(''+{})\[ó-É\]+(!''+'')\[ó-É\]\]\[Û\];Ì(Ì((!''+'')\[ó-É\]+(!''+'')\[ó\]+(!''+'')\[ó-ó\]+(!''+'')\[É\]+((!''+''))\[ó-É\]+(\[\].$+'')\[ó-É\]+'\\''+''+'\\\\'+(ó-É)+(É+É)+(ó-É)+'\\\\'+(þ)+(É+ó)+'\\\\'+(ó-É)+(ó+ó)+(ó-ó)+'\\\\'+(ó-É)+(ó+ó)+(É)+'\\\\'+(ó-É)+(É+ó)+(þ)+'\\\\'+(ó-É)+(É+ó)+(É+ó)+'\\\\'+(ó-É)+(ó+ó)+(ó-ó)+'\\\\'+(ó-É)+(ó+ó)+(É+É)+'\\\\'+(É+ó)+(ó-ó)+'\\\\'+(É+É)+(þ)+'\\\\'+(ó-É)+(ó-ó)+(É+ó)+'\\\\'+(ó-É)+(É+ó)+(ó+ó)+'\\\\'+(ó-É)+(ó+ó)+(É+É)+'\\\\'+(ó-É)+(ó+ó)+(É)+'\\\\'+(ó-É)+(É+É)+(É+ó)+'\\\\'+(ó-É)+(þ)+(É)+'\\\\'+(É+É)+(ó-ó)+'\\\\'+(ó-É)+(É+ó)+(É+É)+'\\\\'+(ó-É)+(É+É)+(É+ó)+'\\\\'+(É+É)+(ó-ó)+'\\\\'+(ó-É)+(É+ó)+(É+ó)+'\\\\'+(ó-É)+(É+ó)+(þ)+'\\\\'+(ó-É)+(ó+ó)+(É+É)+'\\\\'+(É+É)+(ó-ó)+'\\\\'+(ó-É)+(É+É)+(É+É)+'\\\\'+(ó-É)+(É+É)+(É+ó)+'\\\\'+(É+É)+(ó-ó)+'\\\\'+(ó-É)+(ó+ó)+(ó-ó)+'\\\\'+(ó-É)+(É+É)+(ó-É)+'\\\\'+(ó-É)+(ó+ó)+(ó)+'\\\\'+(ó-É)+(ó+ó)+(ó)+'\\\\'+(ó-É)+(É+É)+(É+ó)+'\\\\'+(É+É)+(þ)+'\\\\'+(É+ó)+(ó-É)+'\\\\'+(þ)+(ó)+'\\\\'+(ó-É)+(É+ó)+(ó-É)+'\\\\'+(ó-É)+(É+É)+(ó+ó)+'\\\\'+(É+ó)+(ó-ó)+'\\\\'+(ó-É)+(É+É)+(ó-É)+'\\\\'+(þ)+(É+ó)+'\\\\'+(þ)+(É+ó)+'\\\\'+(É+É)+(þ)+'\\\\'+(ó-É)+(ó+ó)+(É+É)+'\\\\'+(ó-É)+(É+ó)+(þ)+'\\\\'+(ó-É)+(ó+ó)+(É+É)+'\\\\'+(ó-É)+(É+ó)+(þ)+'\\\\'+(ó+ó)+(ó-É)+'\\\\'+(ó+ó)+(É)+'\\\\'+(ó+ó)+(ó)+'\\\\'+(ó-É)+(É+ó)+(É+É)+'\\\\'+(ó-É)+(É+ó)+(þ)+'\\\\'+(ó-É)+(É+ó)+(É+É)+'\\\\'+(É+É)+(þ)+'\\\\'+(É+ó)+(ó-É)+'\\\\'+(ó-É)+(þ)+(ó)+'\\\\'+(ó-É)+(É+É)+(ó-É)+'\\\\'+(ó-É)+(É+ó)+(É+É)+'\\\\'+(ó-É)+(É+É)+(É+ó)+'\\\\'+(ó-É)+(ó+ó)+(É)+'\\\\'+(ó-É)+(ó+ó)+(É+É)+'\\\\'+(É+ó)+(ó-ó)+'\\\\'+(É+É)+(þ)+'\\\\'+(ó-É)+(É+É)+(É)+'\\\\'+(ó-É)+(ó+ó)+(É)+'\\\\'+(ó-É)+(É+É)+(ó-É)+'\\\\'+(ó-É)+(ó+ó)+(ó+ó)+'\\\\'+(ó-É)+(É+ó)+(þ)+'\\\\'+(É+É)+(þ)+'\\\\'+(É+ó)+(ó-É)+'\\\\'+(þ)+(ó)+'\\\\'+(ó-É)+(þ)+(É+ó)+'\\\\'+(ó-É)+(É+É)+(É+ó)+'\\\\'+(ó-É)+(É+ó)+(É+É)+'\\\\'+(ó-É)+(ó+ó)+(ó)+'\\\\'+(ó-É)+(É+É)+(É+ó)+'\\\\'+(ó-É)+(þ)+(ó)+'\\\\'+(ó-É)+(É+É)+(ó-É)+'\\\\'+(ó-É)+(É+ó)+(É+É)+'\\\\'+(ó-É)+(É+É)+(É+ó)+'\\\\'+(ó-É)+(ó+ó)+(É)+'\\\\'+(ó-É)+(ó+ó)+(É+É)+'\\\\'+(É+ó)+(ó-ó)+'\\\\'+(É+É)+(þ)+'\\\\'+(ó-É)+(É+É)+(ó+ó)+'\\\\'+(ó-É)+(É+É)+(ó-É)+'\\\\'+(ó-É)+(É+ó)+(ó-É)+'\\\\'+(ó-É)+(É+ó)+(É+É)+'\\\\'+(É+ó)+(ó+ó)+'\\\\'+(É+ó)+(ó+ó)+'\\\\'+(É+ó)+(ó+ó)+'\\\\'+(É+É)+(þ)+'\\\\'+(É+ó)+(ó-É)+'\\\\'+(þ)+(ó)+'\\\\'+(ó-É)+(þ)+(É+ó)+'\\'')())()
+```js
+É=-~-~[],ó=-~É,Ë=É<<É,þ=Ë+~[];Ì=(ó-ó)[Û=(''+{})[É+ó]+(''+{})[ó-É]+([].ó+'')[ó-É]+(!!''+'')[ó]+({}+'')[ó+ó]+(!''+'')[ó-É]+(!''+'')[É]+(''+{})[É+ó]+({}+'')[ó+ó]+(''+{})[ó-É]+(!''+'')[ó-É]][Û];Ì(Ì((!''+'')[ó-É]+(!''+'')[ó]+(!''+'')[ó-ó]+(!''+'')[É]+((!''+''))[ó-É]+([].$+'')[ó-É]+'\''+''+'\\'+(ó-É)+(É+É)+(ó-É)+'\\'+(þ)+(É+ó)+'\\'+(ó-É)+(ó+ó)+(ó-ó)+'\\'+(ó-É)+(ó+ó)+(É)+'\\'+(ó-É)+(É+ó)+(þ)+'\\'+(ó-É)+(É+ó)+(É+ó)+'\\'+(ó-É)+(ó+ó)+(ó-ó)+'\\'+(ó-É)+(ó+ó)+(É+É)+'\\'+(É+ó)+(ó-ó)+'\\'+(É+É)+(þ)+'\\'+(ó-É)+(ó-ó)+(É+ó)+'\\'+(ó-É)+(É+ó)+(ó+ó)+'\\'+(ó-É)+(ó+ó)+(É+É)+'\\'+(ó-É)+(ó+ó)+(É)+'\\'+(ó-É)+(É+É)+(É+ó)+'\\'+(ó-É)+(þ)+(É)+'\\'+(É+É)+(ó-ó)+'\\'+(ó-É)+(É+ó)+(É+É)+'\\'+(ó-É)+(É+É)+(É+ó)+'\\'+(É+É)+(ó-ó)+'\\'+(ó-É)+(É+ó)+(É+ó)+'\\'+(ó-É)+(É+ó)+(þ)+'\\'+(ó-É)+(ó+ó)+(É+É)+'\\'+(É+É)+(ó-ó)+'\\'+(ó-É)+(É+É)+(É+É)+'\\'+(ó-É)+(É+É)+(É+ó)+'\\'+(É+É)+(ó-ó)+'\\'+(ó-É)+(ó+ó)+(ó-ó)+'\\'+(ó-É)+(É+É)+(ó-É)+'\\'+(ó-É)+(ó+ó)+(ó)+'\\'+(ó-É)+(ó+ó)+(ó)+'\\'+(ó-É)+(É+É)+(É+ó)+'\\'+(É+É)+(þ)+'\\'+(É+ó)+(ó-É)+'\\'+(þ)+(ó)+'\\'+(ó-É)+(É+ó)+(ó-É)+'\\'+(ó-É)+(É+É)+(ó+ó)+'\\'+(É+ó)+(ó-ó)+'\\'+(ó-É)+(É+É)+(ó-É)+'\\'+(þ)+(É+ó)+'\\'+(þ)+(É+ó)+'\\'+(É+É)+(þ)+'\\'+(ó-É)+(ó+ó)+(É+É)+'\\'+(ó-É)+(É+ó)+(þ)+'\\'+(ó-É)+(ó+ó)+(É+É)+'\\'+(ó-É)+(É+ó)+(þ)+'\\'+(ó+ó)+(ó-É)+'\\'+(ó+ó)+(É)+'\\'+(ó+ó)+(ó)+'\\'+(ó-É)+(É+ó)+(É+É)+'\\'+(ó-É)+(É+ó)+(þ)+'\\'+(ó-É)+(É+ó)+(É+É)+'\\'+(É+É)+(þ)+'\\'+(É+ó)+(ó-É)+'\\'+(ó-É)+(þ)+(ó)+'\\'+(ó-É)+(É+É)+(ó-É)+'\\'+(ó-É)+(É+ó)+(É+É)+'\\'+(ó-É)+(É+É)+(É+ó)+'\\'+(ó-É)+(ó+ó)+(É)+'\\'+(ó-É)+(ó+ó)+(É+É)+'\\'+(É+ó)+(ó-ó)+'\\'+(É+É)+(þ)+'\\'+(ó-É)+(É+É)+(É)+'\\'+(ó-É)+(ó+ó)+(É)+'\\'+(ó-É)+(É+É)+(ó-É)+'\\'+(ó-É)+(ó+ó)+(ó+ó)+'\\'+(ó-É)+(É+ó)+(þ)+'\\'+(É+É)+(þ)+'\\'+(É+ó)+(ó-É)+'\\'+(þ)+(ó)+'\\'+(ó-É)+(þ)+(É+ó)+'\\'+(ó-É)+(É+É)+(É+ó)+'\\'+(ó-É)+(É+ó)+(É+É)+'\\'+(ó-É)+(ó+ó)+(ó)+'\\'+(ó-É)+(É+É)+(É+ó)+'\\'+(ó-É)+(þ)+(ó)+'\\'+(ó-É)+(É+É)+(ó-É)+'\\'+(ó-É)+(É+ó)+(É+É)+'\\'+(ó-É)+(É+É)+(É+ó)+'\\'+(ó-É)+(ó+ó)+(É)+'\\'+(ó-É)+(ó+ó)+(É+É)+'\\'+(É+ó)+(ó-ó)+'\\'+(É+É)+(þ)+'\\'+(ó-É)+(É+É)+(ó+ó)+'\\'+(ó-É)+(É+É)+(ó-É)+'\\'+(ó-É)+(É+ó)+(ó-É)+'\\'+(ó-É)+(É+ó)+(É+É)+'\\'+(É+ó)+(ó+ó)+'\\'+(É+ó)+(ó+ó)+'\\'+(É+ó)+(ó+ó)+'\\'+(É+É)+(þ)+'\\'+(É+ó)+(ó-É)+'\\'+(þ)+(ó)+'\\'+(ó-É)+(þ)+(É+ó)+'\'')())()
 ```
 
 It looks like Obfuscated JS.
 
 While searching around, i came across [this article.](https://stackoverflow.com/questions/20884577/how-to-deobfuscate-javascript)
 
-```
-É=-~-~\[\],ó=-~É,Ë=É<<É,þ=Ë+~\[\];Ì=(ó-ó)\[Û=(''+{})\[É+ó\]+(''+{})\[ó-É\]+(\[\].ó+'')\[ó-É\]+(!!''+'')\[ó\]+({}+'')\[ó+ó\]+(!''+'')\[ó-É\]+(!''+'')\[É\]+(''+{})\[É+ó\]+({}+'')\[ó+ó\]+(''+{})\[ó-É\]+(!''+'')\[ó-É\]\]\[Û\];Ì(Ì((!''+'')\[ó-É\]+(!''+'')\[ó\]+(!''+'')\[ó-ó\]+(!''+'')\[É\]+((!''+''))\[ó-É\]+(\[\].$+'')\[ó-É\]+'\\''+''+'\\\\'+(ó-É)+(É+É)+(ó-É)+'\\\\'+(þ)+(É+ó)+'\\\\'+(ó-É)+(ó+ó)+(ó-ó)+'\\\\'+(ó-É)+(ó+ó)+(É)+'\\\\'+(ó-É)+(É+ó)+(þ)+'\\\\'+(ó-É)+(É+ó)+(É+ó)+'\\\\'+(ó-É)+(ó+ó)+(ó-ó)+'\\\\'+(ó-É)+(ó+ó)+(É+É)+'\\\\'+(É+ó)+(ó-ó)+'\\\\'+(É+É)+(þ)+'\\\\'+(ó-É)+(ó-ó)+(É+ó)+'\\\\'+(ó-É)+(É+ó)+(ó+ó)+'\\\\'+(ó-É)+(ó+ó)+(É+É)+'\\\\'+(ó-É)+(ó+ó)+(É)+'\\\\'+(ó-É)+(É+É)+(É+ó)+'\\\\'+(ó-É)+(þ)+(É)+'\\\\'+(É+É)+(ó-ó)+'\\\\'+(ó-É)+(É+ó)+(É+É)+'\\\\'+(ó-É)+(É+É)+(É+ó)+'\\\\'+(É+É)+(ó-ó)+'\\\\'+(ó-É)+(É+ó)+(É+ó)+'\\\\'+(ó-É)+(É+ó)+(þ)+'\\\\'+(ó-É)+(ó+ó)+(É+É)+'\\\\'+(É+É)+(ó-ó)+'\\\\'+(ó-É)+(É+É)+(É+É)+'\\\\'+(ó-É)+(É+É)+(É+ó)+'\\\\'+(É+É)+(ó-ó)+'\\\\'+(ó-É)+(ó+ó)+(ó-ó)+'\\\\'+(ó-É)+(É+É)+(ó-É)+'\\\\'+(ó-É)+(ó+ó)+(ó)+'\\\\'+(ó-É)+(ó+ó)+(ó)+'\\\\'+(ó-É)+(É+É)+(É+ó)+'\\\\'+(É+É)+(þ)+'\\\\'+(É+ó)+(ó-É)+'\\\\'+(þ)+(ó)+'\\\\'+(ó-É)+(É+ó)+(ó-É)+'\\\\'+(ó-É)+(É+É)+(ó+ó)+'\\\\'+(É+ó)+(ó-ó)+'\\\\'+(ó-É)+(É+É)+(ó-É)+'\\\\'+(þ)+(É+ó)+'\\\\'+(þ)+(É+ó)+'\\\\'+(É+É)+(þ)+'\\\\'+(ó-É)+(ó+ó)+(É+É)+'\\\\'+(ó-É)+(É+ó)+(þ)+'\\\\'+(ó-É)+(ó+ó)+(É+É)+'\\\\'+(ó-É)+(É+ó)+(þ)+'\\\\'+(ó+ó)+(ó-É)+'\\\\'+(ó+ó)+(É)+'\\\\'+(ó+ó)+(ó)+'\\\\'+(ó-É)+(É+ó)+(É+É)+'\\\\'+(ó-É)+(É+ó)+(þ)+'\\\\'+(ó-É)+(É+ó)+(É+É)+'\\\\'+(É+É)+(þ)+'\\\\'+(É+ó)+(ó-É)+'\\\\'+(ó-É)+(þ)+(ó)+'\\\\'+(ó-É)+(É+É)+(ó-É)+'\\\\'+(ó-É)+(É+ó)+(É+É)+'\\\\'+(ó-É)+(É+É)+(É+ó)+'\\\\'+(ó-É)+(ó+ó)+(É)+'\\\\'+(ó-É)+(ó+ó)+(É+É)+'\\\\'+(É+ó)+(ó-ó)+'\\\\'+(É+É)+(þ)+'\\\\'+(ó-É)+(É+É)+(É)+'\\\\'+(ó-É)+(ó+ó)+(É)+'\\\\'+(ó-É)+(É+É)+(ó-É)+'\\\\'+(ó-É)+(ó+ó)+(ó+ó)+'\\\\'+(ó-É)+(É+ó)+(þ)+'\\\\'+(É+É)+(þ)+'\\\\'+(É+ó)+(ó-É)+'\\\\'+(þ)+(ó)+'\\\\'+(ó-É)+(þ)+(É+ó)+'\\\\'+(ó-É)+(É+É)+(É+ó)+'\\\\'+(ó-É)+(É+ó)+(É+É)+'\\\\'+(ó-É)+(ó+ó)+(ó)+'\\\\'+(ó-É)+(É+É)+(É+ó)+'\\\\'+(ó-É)+(þ)+(ó)+'\\\\'+(ó-É)+(É+É)+(ó-É)+'\\\\'+(ó-É)+(É+ó)+(É+É)+'\\\\'+(ó-É)+(É+É)+(É+ó)+'\\\\'+(ó-É)+(ó+ó)+(É)+'\\\\'+(ó-É)+(ó+ó)+(É+É)+'\\\\'+(É+ó)+(ó-ó)+'\\\\'+(É+É)+(þ)+'\\\\'+(ó-É)+(É+É)+(ó+ó)+'\\\\'+(ó-É)+(É+É)+(ó-É)+'\\\\'+(ó-É)+(É+ó)+(ó-É)+'\\\\'+(ó-É)+(É+ó)+(É+É)+'\\\\'+(É+ó)+(ó+ó)+'\\\\'+(É+ó)+(ó+ó)+'\\\\'+(É+ó)+(ó+ó)+'\\\\'+(É+É)+(þ)+'\\\\'+(É+ó)+(ó-É)+'\\\\'+(þ)+(ó)+'\\\\'+(ó-É)+(þ)+(É+ó)+'\\'')()).toString()
+```js 
+É=-~-~[],ó=-~É,Ë=É<<É,þ=Ë+~[];Ì=(ó-ó)[Û=(''+{})[É+ó]+(''+{})[ó-É]+([].ó+'')[ó-É]+(!!''+'')[ó]+({}+'')[ó+ó]+(!''+'')[ó-É]+(!''+'')[É]+(''+{})[É+ó]+({}+'')[ó+ó]+(''+{})[ó-É]+(!''+'')[ó-É]][Û];Ì(Ì((!''+'')[ó-É]+(!''+'')[ó]+(!''+'')[ó-ó]+(!''+'')[É]+((!''+''))[ó-É]+([].$+'')[ó-É]+'\''+''+'\\'+(ó-É)+(É+É)+(ó-É)+'\\'+(þ)+(É+ó)+'\\'+(ó-É)+(ó+ó)+(ó-ó)+'\\'+(ó-É)+(ó+ó)+(É)+'\\'+(ó-É)+(É+ó)+(þ)+'\\'+(ó-É)+(É+ó)+(É+ó)+'\\'+(ó-É)+(ó+ó)+(ó-ó)+'\\'+(ó-É)+(ó+ó)+(É+É)+'\\'+(É+ó)+(ó-ó)+'\\'+(É+É)+(þ)+'\\'+(ó-É)+(ó-ó)+(É+ó)+'\\'+(ó-É)+(É+ó)+(ó+ó)+'\\'+(ó-É)+(ó+ó)+(É+É)+'\\'+(ó-É)+(ó+ó)+(É)+'\\'+(ó-É)+(É+É)+(É+ó)+'\\'+(ó-É)+(þ)+(É)+'\\'+(É+É)+(ó-ó)+'\\'+(ó-É)+(É+ó)+(É+É)+'\\'+(ó-É)+(É+É)+(É+ó)+'\\'+(É+É)+(ó-ó)+'\\'+(ó-É)+(É+ó)+(É+ó)+'\\'+(ó-É)+(É+ó)+(þ)+'\\'+(ó-É)+(ó+ó)+(É+É)+'\\'+(É+É)+(ó-ó)+'\\'+(ó-É)+(É+É)+(É+É)+'\\'+(ó-É)+(É+É)+(É+ó)+'\\'+(É+É)+(ó-ó)+'\\'+(ó-É)+(ó+ó)+(ó-ó)+'\\'+(ó-É)+(É+É)+(ó-É)+'\\'+(ó-É)+(ó+ó)+(ó)+'\\'+(ó-É)+(ó+ó)+(ó)+'\\'+(ó-É)+(É+É)+(É+ó)+'\\'+(É+É)+(þ)+'\\'+(É+ó)+(ó-É)+'\\'+(þ)+(ó)+'\\'+(ó-É)+(É+ó)+(ó-É)+'\\'+(ó-É)+(É+É)+(ó+ó)+'\\'+(É+ó)+(ó-ó)+'\\'+(ó-É)+(É+É)+(ó-É)+'\\'+(þ)+(É+ó)+'\\'+(þ)+(É+ó)+'\\'+(É+É)+(þ)+'\\'+(ó-É)+(ó+ó)+(É+É)+'\\'+(ó-É)+(É+ó)+(þ)+'\\'+(ó-É)+(ó+ó)+(É+É)+'\\'+(ó-É)+(É+ó)+(þ)+'\\'+(ó+ó)+(ó-É)+'\\'+(ó+ó)+(É)+'\\'+(ó+ó)+(ó)+'\\'+(ó-É)+(É+ó)+(É+É)+'\\'+(ó-É)+(É+ó)+(þ)+'\\'+(ó-É)+(É+ó)+(É+É)+'\\'+(É+É)+(þ)+'\\'+(É+ó)+(ó-É)+'\\'+(ó-É)+(þ)+(ó)+'\\'+(ó-É)+(É+É)+(ó-É)+'\\'+(ó-É)+(É+ó)+(É+É)+'\\'+(ó-É)+(É+É)+(É+ó)+'\\'+(ó-É)+(ó+ó)+(É)+'\\'+(ó-É)+(ó+ó)+(É+É)+'\\'+(É+ó)+(ó-ó)+'\\'+(É+É)+(þ)+'\\'+(ó-É)+(É+É)+(É)+'\\'+(ó-É)+(ó+ó)+(É)+'\\'+(ó-É)+(É+É)+(ó-É)+'\\'+(ó-É)+(ó+ó)+(ó+ó)+'\\'+(ó-É)+(É+ó)+(þ)+'\\'+(É+É)+(þ)+'\\'+(É+ó)+(ó-É)+'\\'+(þ)+(ó)+'\\'+(ó-É)+(þ)+(É+ó)+'\\'+(ó-É)+(É+É)+(É+ó)+'\\'+(ó-É)+(É+ó)+(É+É)+'\\'+(ó-É)+(ó+ó)+(ó)+'\\'+(ó-É)+(É+É)+(É+ó)+'\\'+(ó-É)+(þ)+(ó)+'\\'+(ó-É)+(É+É)+(ó-É)+'\\'+(ó-É)+(É+ó)+(É+É)+'\\'+(ó-É)+(É+É)+(É+ó)+'\\'+(ó-É)+(ó+ó)+(É)+'\\'+(ó-É)+(ó+ó)+(É+É)+'\\'+(É+ó)+(ó-ó)+'\\'+(É+É)+(þ)+'\\'+(ó-É)+(É+É)+(ó+ó)+'\\'+(ó-É)+(É+É)+(ó-É)+'\\'+(ó-É)+(É+ó)+(ó-É)+'\\'+(ó-É)+(É+ó)+(É+É)+'\\'+(É+ó)+(ó+ó)+'\\'+(É+ó)+(ó+ó)+'\\'+(É+ó)+(ó+ó)+'\\'+(É+É)+(þ)+'\\'+(É+ó)+(ó-É)+'\\'+(þ)+(ó)+'\\'+(ó-É)+(þ)+(É+ó)+'\'')()).toString()
 ```
 
 And just deleting the last ‘()’ and replacing with toString() gives us.
 
-<img alt="Image for post" class="t u v cb aj" src="https://miro.medium.com/max/1396/1\*A968Wzq\_GyRuTOXS9nEznw.png" width="698" height="146" srcSet="https://miro.medium.com/max/552/1\*A968Wzq\_GyRuTOXS9nEznw.png 276w, https://miro.medium.com/max/1104/1\*A968Wzq\_GyRuTOXS9nEznw.png 552w, https://miro.medium.com/max/1280/1\*A968Wzq\_GyRuTOXS9nEznw.png 640w, https://miro.medium.com/max/1396/1\*A968Wzq\_GyRuTOXS9nEznw.png 698w" sizes="698px"/>
+![i](https://miro.medium.com/max/698/1*A968Wzq_GyRuTOXS9nEznw.png)
 
 And we got the first flag.
 
@@ -60,7 +62,7 @@ varpass=unescape("unescape("String.fromCharCode("104,68,117,102,106,100,107,105,
 
 And Converting the decimal value “104,68,117,102,106,100,107,105,49,53,54” to ascii, we get next flag.
 
-<img alt="Image for post" class="t u v cb aj" src="https://miro.medium.com/max/1274/1\*wGxqFEly5AQyRqK4m\_Wr6Q.png" width="637" height="510" srcSet="https://miro.medium.com/max/552/1\*wGxqFEly5AQyRqK4m\_Wr6Q.png 276w, https://miro.medium.com/max/1104/1\*wGxqFEly5AQyRqK4m\_Wr6Q.png 552w, https://miro.medium.com/max/1274/1\*wGxqFEly5AQyRqK4m\_Wr6Q.png 637w" sizes="637px"/>
+![i](https://miro.medium.com/max/637/1*wGxqFEly5AQyRqK4m_Wr6Q.png)
 
 FLAG 3
 ------
@@ -77,7 +79,7 @@ wget [https://i.ibb.co/WD6ftr9/bear.jpg](https://i.ibb.co/WD6ftr9/bear.jpg)
 
 Using exiftool on the image, i didnot find anything interesting.
 
-```
+```console 
 File Name                       : bear.jpg  
 Directory                       : .  
 File Size                       : 26 kB  
@@ -104,13 +106,13 @@ Megapixels                      : 0.135
 
 I ran strings against the image, but i didn't find anything interesting there too.
 
-```
+```console 
 strings bear.jpg
 ```
 
 As it was a jpeg image, i tried extracting the hidden data, if there was any, using steghide with blank password.
 
-```
+```console 
 $ steghide extract -sf bear.jpg   
 Enter passphrase:   
 steghide: could not extract any data with that passphrase!
@@ -118,7 +120,7 @@ steghide: could not extract any data with that passphrase!
 
 So I decided to bruteforce the password using stegcrack and with rockyou.txt wordlist.
 
-```
+```console 
 $ stegcracker bear.jpg /usr/share/wordlists/rockyou.txt  
 StegCracker 2.0.9 - ([https://github.com/Paradoxis/StegCracker](https://github.com/Paradoxis/StegCracker))  
 Copyright (c) 2020 - Luke Paris (Paradoxis)Counting lines in wordlist..  
@@ -131,16 +133,16 @@ pandas
 
 And we successfully cracked the password. And i manually extracted the file using steghide as stegcracker renamed the actual file to bear.jpg.out.
 
-```
-$ steghide extract -sf bear.jpg  
+```console 
+$:~ steghide extract -sf bear.jpg  
 Enter passphrase:   
 wrote extracted data to "challenge.txt".
 ```
 
 Looking at file using cat
 
-```
-$ cat challenge.txt   
+```console
+$:~ cat challenge.txt   
 Grizzly‌‌‌‌‍!‌‌‌‌‌
 ```
 
@@ -154,46 +156,49 @@ I was familiar with the data hiding using unicode spaces and normal spaces. But 
 
 Decoder on the Website
 
-<img alt="Image for post" class="t u v cb aj" src="https://miro.medium.com/max/3186/1\*VDkd\_11Z9NjGt2PCsnqPPQ.png" width="1593" height="599" srcSet="https://miro.medium.com/max/552/1\*VDkd\_11Z9NjGt2PCsnqPPQ.png 276w, https://miro.medium.com/max/1104/1\*VDkd\_11Z9NjGt2PCsnqPPQ.png 552w, https://miro.medium.com/max/1280/1\*VDkd\_11Z9NjGt2PCsnqPPQ.png 640w, https://miro.medium.com/max/1456/1\*VDkd\_11Z9NjGt2PCsnqPPQ.png 728w, https://miro.medium.com/max/1632/1\*VDkd\_11Z9NjGt2PCsnqPPQ.png 816w, https://miro.medium.com/max/1808/1\*VDkd\_11Z9NjGt2PCsnqPPQ.png 904w, https://miro.medium.com/max/1984/1\*VDkd\_11Z9NjGt2PCsnqPPQ.png 992w, https://miro.medium.com/max/2000/1\*VDkd\_11Z9NjGt2PCsnqPPQ.png 1000w" sizes="1000px"/>
+![i](https://miro.medium.com/max/1000/1*VDkd_11Z9NjGt2PCsnqPPQ.png)
 
 But i was having problem copying the text. So i used a tool called xclip.
 
 Xclip can be install from apt.
 
-```
+```console 
 $ apt install xclip
 ```
 
 Using xclip, I copied the content of the file challenge.txt and pasted on the site .
 
-```
+```console 
 $ cat challenge.txt | xclip -selection clipboard
 ```
 
 After it decoded the content, I downloaded a file.
 
-<img alt="Image for post" class="t u v cb aj" src="https://miro.medium.com/max/2362/1\*520Kdq-lc2SBLyb-mLpyAw.png" width="1181" height="370" srcSet="https://miro.medium.com/max/552/1\*520Kdq-lc2SBLyb-mLpyAw.png 276w, https://miro.medium.com/max/1104/1\*520Kdq-lc2SBLyb-mLpyAw.png 552w, https://miro.medium.com/max/1280/1\*520Kdq-lc2SBLyb-mLpyAw.png 640w, https://miro.medium.com/max/1400/1\*520Kdq-lc2SBLyb-mLpyAw.png 700w" sizes="700px"/>
+![i](https://miro.medium.com/max/700/1*520Kdq-lc2SBLyb-mLpyAw.png)
 
 Looking at the contents of the downloaded file
 
 ```
-^[@F](http://twitter.com/F)^[@l](http://twitter.com/l)^[@a](http://twitter.com/a)^[@g](http://twitter.com/g)^@:^@ ^@\*^@;^@}^[@9](http://twitter.com/9)^[@4](http://twitter.com/4)^@?^@}^[@7](http://twitter.com/7)^@+^[@K](http://twitter.com/K)^[@p](http://twitter.com/p)^[@H](http://twitter.com/H)^[@3](http://twitter.com/3)^@>^[@u](http://twitter.com/u)^[@7](http://twitter.com/7)^[@4](http://twitter.com/4)^[@v](http://twitter.com/v)^[@t](http://twitter.com/t)^@<^[@y](http://twitter.com/y)^[@u](http://twitter.com/u)^[@h](http://twitter.com/h)^[@\_](http://twitter.com/_)^@}^[@v](http://twitter.com/v)^@'^[@7](http://twitter.com/7)^@|^[@u](http://twitter.com/u)^@}^[@s](http://twitter.com/s)^@&^[@p](http://twitter.com/p)^[@l](http://twitter.com/l)^[@l](http://twitter.com/l)
+^@F^@l^@a^@g^@:^@ ^@*^@;^@}^@9^@4^@?^@}^@7^@+^@K^@p^@H^@3^@>^@u^@7^@4^@v^@t^@<^@y^@u^@h^@_^@}^@v^@'^@7^@|^@u^@}^@s^@&^@p^@l^@l
 ```
 
 Clearing the gibberish text
 
 ```
-Flag: \*;}94?}7+KpH3>u74vt<yuh\_}v'7|u}s&pll
+Flag: *;}94?}7+KpH3>u74vt<yuh_}v'7|u}s&pll
 ```
 
 I was having strong doubts that it doesn't look like a flag, but I couldn't resist and submitted the flag. And the flag was incorrect.
 
 It looked like a cipher, and just by inspection I thought it was rot47 cipher. So I went to [this site](https://www.dcode.fr/rot-47-cipher) to decode the cipher.
 
-<img alt="Image for post" class="t u v cb aj" src="https://miro.medium.com/max/1602/1\*rbGElIz9B5mnuiSrJjAnNQ.png" width="801" height="205" srcSet="https://miro.medium.com/max/552/1\*rbGElIz9B5mnuiSrJjAnNQ.png 276w, https://miro.medium.com/max/1104/1\*rbGElIz9B5mnuiSrJjAnNQ.png 552w, https://miro.medium.com/max/1280/1\*rbGElIz9B5mnuiSrJjAnNQ.png 640w, https://miro.medium.com/max/1400/1\*rbGElIz9B5mnuiSrJjAnNQ.png 700w" sizes="700px"/>
+![i](https://miro.medium.com/max/700/1*rbGElIz9B5mnuiSrJjAnNQ.png)
 
 And now the output looked familiar. It was a base64 encoded string. So i decoded the string and finally got the final flag.
 
-<img alt="Image for post" class="t u v cb aj" src="https://miro.medium.com/max/1212/1\*ATgiSSjoVZZU1GDBfl0FWQ.png" width="606" height="126" srcSet="https://miro.medium.com/max/552/1\*ATgiSSjoVZZU1GDBfl0FWQ.png 276w, https://miro.medium.com/max/1104/1\*ATgiSSjoVZZU1GDBfl0FWQ.png 552w, https://miro.medium.com/max/1212/1\*ATgiSSjoVZZU1GDBfl0FWQ.png 606w" sizes="606px"/>
+![i](https://miro.medium.com/max/606/1*ATgiSSjoVZZU1GDBfl0FWQ.png)
 
 Thank you for reading the write up. Reply if you have any suggestions regarding the write up. Hope you have enjoyed reading as much as i have enjoyed writing it.
+
+This article was first published on medium and regenerated using npm module medium-to-markdown.  
+You can read my article on [medium](https://medium.com/@shishirsub10/tryhackme-help-bears-80961b2b551b)
