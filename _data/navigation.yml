@@ -20,6 +20,9 @@ docs:
   - title: Try Hack Me
     children:
       - title: "Harder"
-        url: /thm/harder/    
+        url: /thm/harder/
+    children:
+      - title: "Recovery"
+        url: /thm/recovery/    
 
         
