@@ -17,6 +17,12 @@ docs:
     children:
       - title: "Quick"
         url: /htb/quick/
+      - title: "SneakyMailer"
+        url: /htb/sneakymailer/
+      - title: "Feline"
+        url: /htb/feline/
+      - title: "Unbalanced"
+        url: /htb/unbalanced/
   - title: Try Hack Me
     children:
       - title: "Harder"
