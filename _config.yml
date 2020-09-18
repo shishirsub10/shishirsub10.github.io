@@ -120,7 +120,6 @@ tag_archive:
   type: liquid
   path: /tags/
 
-google-site-verification: "axcdCdOAwWecTtxb0wJeBruh2KMyHo40JupyPEnL65g"
 analytics:
   provider: "google-gtag"
   google:
