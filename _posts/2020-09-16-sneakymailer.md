@@ -1,5 +1,5 @@
 ---
-title: "SneakyMailer  Hack The Box"
+title: "SneakyMailer HackTheBox(Active Box)"
 last_modified_at: 2020-09-14T14:40:02-05:00
 categories:
   - htb
