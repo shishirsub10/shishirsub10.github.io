@@ -13,7 +13,7 @@ docs:
     children:
       - title: "Powershell Basics"
         url: /powershell/powershell-basics/
-  - title: Hack The Box
+  - title: HackTheBox
     children:
       - title: "Quick"
         url: /htb/quick/
@@ -23,7 +23,9 @@ docs:
         url: /htb/feline/
       - title: "Unbalanced"
         url: /htb/unbalanced/
-  - title: Try Hack Me
+      - title: "Passage"
+        url: /htb/passage/
+  - title: TryHackMe
     children:
       - title: "Harder"
         url: /thm/harder/
@@ -31,5 +33,6 @@ docs:
         url: /thm/recovery/
       - title: "Help Bears"
         url: /thm/help_bears/     
-
+      - title: "Anonymous
+        url: /thm/anonymous/ 
         
