@@ -211,6 +211,7 @@ namelessone@anonymous:~$ find / -type f -perm -4000 2>/dev/null | grep -i env
 /usr/bin/env
 ```
 As soon as I saw env with SUID bit activated, I went to [gtfobins](https://gtfobins.github.io/gtfobins/env/#suid) to check whether this can be used to escalate my privilege to root and turns out I can.
+I havenot listed all the binaries with SUID bit enabled here.
 
 ## Getting root shell
 ```console
