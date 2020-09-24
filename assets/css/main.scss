@@ -8,6 +8,8 @@
 @import "minimal-mistakes"; // main partials
 
 html {
+    // background-color : black;
+    // text-color : white;
     font-size: 18px; // change to whatever
   
     @include breakpoint($medium) {
@@ -23,3 +25,37 @@ html {
     }
   }
   
+  img{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.author__avatar > img{
+    margin-left: 5px;
+}
+p {
+    text-align: justify;
+
+}
+
+.nav__list .nav__items {
+    margin: 0;
+    font-size: 1.5rem;
+}
+.page__meta{
+  font-size: 0.7em;
+}
+.archive__item-excerpt {
+  font-size: 0.85em;
+}
+// div.highlighter-rouge, figure.highlight{
+//   background : black;
+// }
+
+.author__name{
+  font-size: 1.3em;
+}
+.author__content,.author__urls-wrapper {
+  font-size: 1.1em;
+}
