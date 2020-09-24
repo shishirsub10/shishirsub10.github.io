@@ -45,3 +45,15 @@ docs:
         url: /thm/anonymous/ 
       - title: "Root Me"
         url: /thm/rootme/         
+  - title: Cryptopals
+    children:
+      - title: "Set 1"
+        url: /crypto/cryptopals-set1/
+      - title: "Set 2"
+        url: /crypto/cryptopals-set2/
+  - title: Overthewire
+    children:
+      - title: "Natas"
+        url: /overthewire/natas/
+
+        
