@@ -16,7 +16,7 @@ docs:
   - title: Docker
     children:
       - title: "Basics of docker"
-        url: /docker/docker/
+        url: /docker/docker_1/
   - title: HackTheBox
     children:
       - title: "Quick"
