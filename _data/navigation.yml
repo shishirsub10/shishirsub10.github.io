@@ -9,6 +9,10 @@ main:
     url: /about/
 
 docs:
+  - title: Linux
+    children:
+      - title: "Find Command"
+        url: /linux/find/
   - title: Powershell
     children:
       - title: "Powershell Basics"
