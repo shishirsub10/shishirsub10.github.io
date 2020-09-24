@@ -13,6 +13,10 @@ docs:
     children:
       - title: "Powershell Basics"
         url: /powershell/powershell-basics/
+  - title: Docker
+    children:
+      - title: "Basics of docker"
+        url: /docker/docker/
   - title: HackTheBox
     children:
       - title: "Quick"
