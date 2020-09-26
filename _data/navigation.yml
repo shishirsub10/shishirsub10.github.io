@@ -25,6 +25,8 @@ docs:
     children:
       - title: "Quick"
         url: /htb/quick/
+      - title: "Admirer"
+        url: /htb/admirer/
       - title: "SneakyMailer"
         url: /htb/sneakymailer/
       - title: "Feline"
