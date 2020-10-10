@@ -13,6 +13,8 @@ docs:
     children:
       - title: "Find Command"
         url: /linux/find/
+      - title: "Nmap Cheat Sheet"
+        url: /network/nmap/  
   - title: Powershell
     children:
       - title: "Powershell Basics"
@@ -27,6 +29,8 @@ docs:
         url: /htb/quick/
       - title: "Admirer"
         url: /htb/admirer/
+      - title: "Cache"
+        url: /htb/cache/        
       - title: "SneakyMailer"
         url: /htb/sneakymailer/
       - title: "Feline"
