@@ -18,7 +18,7 @@ email:
 description: >- # this means to ignore newlines until "baseurl:"
   I am an Infosec enthusiast. I like doing hackthebox and tryhackme challenges. I enjoy learning new stuffs. In spare time,
   I like to watch football(soccer), different tv series and movies. 
-# twitter_username: username
+twitter_username: Shishir37768334
 github_username: shishirsub10
 minimal_mistakes_skin: default
 search: true
@@ -64,9 +64,9 @@ author:
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://shishirsubedi.com.np"
-    # - label: "Twitter"
-      # icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/Shishir37768334"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/shishirsub10"
