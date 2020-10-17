@@ -50,7 +50,9 @@ docs:
       - title: "Anonymous"
         url: /thm/anonymous/ 
       - title: "Root Me"
-        url: /thm/rootme/         
+        url: /thm/rootme/
+      - title: "Revenge"
+        url: /thm/revenge/         
   - title: Cryptopals
     children:
       - title: "Set 1"
