@@ -52,7 +52,9 @@ docs:
       - title: "Root Me"
         url: /thm/rootme/
       - title: "Revenge"
-        url: /thm/revenge/         
+        url: /thm/revenge/
+      - title: "MarketPlace"
+        url: /thm/marketplace/           
   - title: Cryptopals
     children:
       - title: "Set 1"
