@@ -15,14 +15,14 @@ docs:
         url: /linux/find/
       - title: "Nmap Cheat Sheet"
         url: /network/nmap/  
-  - title: Powershell
-    children:
-      - title: "Powershell Basics"
-        url: /powershell/powershell-basics/
-  - title: Docker
-    children:
-      - title: "Basics of docker"
-        url: /docker/docker_1/
+  # - title: Powershell
+  #   children:
+  #     - title: "Powershell Basics"
+  #       url: /powershell/powershell-basics/
+  # - title: Docker
+  #   children:
+  #     - title: "Basics of docker"
+  #       url: /docker/docker_1/
   - title: HackTheBox
     children:
       - title: "Quick"
@@ -55,15 +55,15 @@ docs:
         url: /thm/revenge/
       - title: "MarketPlace"
         url: /thm/marketplace/           
-  - title: Cryptopals
-    children:
-      - title: "Set 1"
-        url: /crypto/cryptopals-set1/
-      - title: "Set 2"
-        url: /crypto/cryptopals-set2/
-  - title: Overthewire
-    children:
-      - title: "Natas"
-        url: /overthewire/natas/
+  # - title: Cryptopals
+  #   children:
+  #     - title: "Set 1"
+  #       url: /crypto/cryptopals-set1/
+  #     - title: "Set 2"
+  #       url: /crypto/cryptopals-set2/
+  # - title: Overthewire
+  #   children:
+  #     - title: "Natas"
+  #       url: /overthewire/natas/
 
         
