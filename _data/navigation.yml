@@ -54,7 +54,9 @@ docs:
       - title: "Revenge"
         url: /thm/revenge/
       - title: "MarketPlace"
-        url: /thm/marketplace/           
+        url: /thm/marketplace/
+      - title: "Undiscovered"
+        url: /thm/undiscovered/            
   # - title: Cryptopals
   #   children:
   #     - title: "Set 1"
