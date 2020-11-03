@@ -56,7 +56,9 @@ docs:
       - title: "MarketPlace"
         url: /thm/marketplace/
       - title: "Undiscovered"
-        url: /thm/undiscovered/            
+        url: /thm/undiscovered/
+      - title: "The Server From Hell"
+        url: /thm/serverfromhell/               
   # - title: Cryptopals
   #   children:
   #     - title: "Set 1"
