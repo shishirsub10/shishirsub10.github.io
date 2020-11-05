@@ -58,7 +58,9 @@ docs:
       - title: "Undiscovered"
         url: /thm/undiscovered/
       - title: "The Server From Hell"
-        url: /thm/serverfromhell/               
+        url: /thm/serverfromhell/ 
+      - title: "NerdHerd"
+        url: /thm/nerdherd/                 
   # - title: Cryptopals
   #   children:
   #     - title: "Set 1"
