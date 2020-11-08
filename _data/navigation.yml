@@ -62,7 +62,9 @@ docs:
       - title: "NerdHerd"
         url: /thm/nerdherd/
       - title: "Year of the dog"
-        url: /thm/yearofthedog/                 
+        url: /thm/yearofthedog/
+      - title: "WWBuddy"
+        url: /thm/wwbuddy/                   
   # - title: Cryptopals
   #   children:
   #     - title: "Set 1"
