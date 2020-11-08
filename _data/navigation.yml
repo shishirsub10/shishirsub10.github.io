@@ -60,7 +60,9 @@ docs:
       - title: "The Server From Hell"
         url: /thm/serverfromhell/ 
       - title: "NerdHerd"
-        url: /thm/nerdherd/                 
+        url: /thm/nerdherd/
+      - title: "Year of the dog"
+        url: /thm/yearofthedog/                 
   # - title: Cryptopals
   #   children:
   #     - title: "Set 1"
