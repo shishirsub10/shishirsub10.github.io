@@ -64,7 +64,9 @@ docs:
       - title: "Year of the dog"
         url: /thm/yearofthedog/
       - title: "WWBuddy"
-        url: /thm/wwbuddy/                   
+        url: /thm/wwbuddy/ 
+      - title: "Startup"
+        url: /thm/startup/                   
   # - title: Cryptopals
   #   children:
   #     - title: "Set 1"
