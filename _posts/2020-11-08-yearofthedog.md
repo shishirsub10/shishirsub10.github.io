@@ -373,7 +373,7 @@ work_analysis:Sep  5 20:53:04 staging-server sshd[39218]: Connection closed by i
 .gitconfig:     name = Dylan
 .gitconfig:     email = dylan@yearofthedog.thm
 ```
-There is a log which is interesting. ie **dylanLabr4\**\*\*4L1f3**, which can be username:password as the user might have mistakenly typed the password on the username field. So,lets try to login as dylan with that password.
+There is a log which is interesting. ie **dylanLabr4\**\*\*\*\*\*f3**, which can be username:password as the user might have mistakenly typed the password on the username field. So,lets try to login as dylan with that password.
 
 ## Shell as Dylan
 ```console
