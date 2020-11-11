@@ -68,7 +68,9 @@ docs:
       - title: "Startup"
         url: /thm/startup/
       - title: "Year of the Pig"
-        url: /thm/yearofthepig/                     
+        url: /thm/yearofthepig/ 
+      - title: "Python Playground"
+        url: /thm/pythonp/                     
   # - title: Cryptopals
   #   children:
   #     - title: "Set 1"
