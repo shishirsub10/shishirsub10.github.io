@@ -10,6 +10,8 @@ tags:
   - gtfobins
   - ftp
 ---
+<script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="reddevil2020" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting. You can now buy me a coffee!" data-color="#FFDD00" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
 
 Anonymous is a medium rated room in tryhackme which has a anonymous login enabled in ftp which has a folder called scripts in which anyone can write a file. It also has a script which is continuously being executed probably as a cron job. So we overwrite this script to get a reverse shell. Inside the box, we exploited the binary `env` which had SUID bit enabled to get a root shell.
 

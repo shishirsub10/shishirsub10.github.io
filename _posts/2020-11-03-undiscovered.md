@@ -18,6 +18,9 @@ tags:
   - RiteCMS
   - web
 ---
+<script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="reddevil2020" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting. You can now buy me a coffee!" data-color="#FFDD00" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+
 ![8](/assets/images/thm/undiscovered/8.png)
 
 Undiscovered is a medium rated room by [ch4rm](https://tryhackme.com/p/ch4rm). We find a subdomain which was using a older version of RiteCMS whose login password was bruteforced using hydra to get a reverse shell on the box as www-data. On the box, nfs share was used to get a shell as user william. Afterwards, SUID binary is used to get a shell as another user leonard and at last linux capabilities on a vim binary was exploited to get a shell as root.

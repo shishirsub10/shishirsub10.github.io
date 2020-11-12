@@ -17,7 +17,12 @@ tags:
   - hashcat
   - Hard
 ---
-![](/assets/images/thm/yearofthepig/yearofthepig.jpeg)
+
+<script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="reddevil2020" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting. You can now buy me a coffee!" data-color="#FFDD00" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
+
+<img alt="yearofthepig" src="/assets/images/thm/yearofthepig/yearofthepig.jpeg" width="400px" height="150px">
+
+
 [Yearofthepig](https://tryhackme.com/room/yearofthepig) is a hard rated linux room in TryHackMe by [MuirlandOracle](https://tryhackme.com/p/MuirlandOracle). Information disclosure on the webserver results on leaking multiple api endpoints, usernames and password scheme which was all combined to bruteforce a password for user marco to get a shell on the box. On the box, hash for another user was found on a sqlite database which was cracked using hashcat and at last a entry on sudoers file was exploited to get a root shell on the box.
 
 # Port Scan

@@ -17,8 +17,11 @@ tags:
   - Web
   - Hard
 ---
+<script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="reddevil2020" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting. You can now buy me a coffee!" data-color="#FFDD00" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
-![yearofthedog](/assets/images/thm/yearofthedog/yearofthedog.png)
+<img alt="yearofthedog" src="/assets/images/thm/yearofthedog/yearofthedog.png" width="400px" height="150px">
+
+
 
 Yearofthedog is a hard rated room on TryHackMe by [MuirlandOracle](https://tryhackme.com/p/MuirlandOracle). We get a shell on the box as www-data using SQL injection. On the box, the credentials for user dylan is found on a log file. There were few extra ports listening on local interface on of which was running gitea, which was exploited to get a shell on a docker container as user git. At last, the gitea project folder was accessible from both host and inside docker container which was used to get a root shell on the box. 
 
