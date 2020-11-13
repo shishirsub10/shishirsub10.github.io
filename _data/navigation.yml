@@ -70,7 +70,9 @@ docs:
       - title: "Year of the Pig"
         url: /thm/yearofthepig/ 
       - title: "Python Playground"
-        url: /thm/pythonp/                     
+        url: /thm/pythonp/
+      - title: "Relevent"
+        url: /thm/relevant/                       
   # - title: Cryptopals
   #   children:
   #     - title: "Set 1"
