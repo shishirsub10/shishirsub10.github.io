@@ -72,7 +72,9 @@ docs:
       - title: "Python Playground"
         url: /thm/pythonp/
       - title: "Relevent"
-        url: /thm/relevant/                       
+        url: /thm/relevant/
+      - title: "Dogcat"
+        url: /thm/dogcat/                       
   # - title: Cryptopals
   #   children:
   #     - title: "Set 1"
