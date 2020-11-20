@@ -76,7 +76,9 @@ docs:
       - title: "Dogcat"
         url: /thm/dogcat/   
       - title: "The Blob Blog"
-        url: /thm/theblobblog/                     
+        url: /thm/theblobblog/
+      - title: "Misguided Ghosts"
+        url: /thm/misguided_ghosts/                      
   # - title: Cryptopals
   #   children:
   #     - title: "Set 1"
