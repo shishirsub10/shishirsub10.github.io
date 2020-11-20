@@ -74,7 +74,9 @@ docs:
       - title: "Relevent"
         url: /thm/relevant/
       - title: "Dogcat"
-        url: /thm/dogcat/                       
+        url: /thm/dogcat/   
+      - title: "The Blob Blog"
+        url: /thm/theblobblog/                     
   # - title: Cryptopals
   #   children:
   #     - title: "Set 1"
