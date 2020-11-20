@@ -1,6 +1,6 @@
 ---
 title: "The Blob Blog TryHackMe Write Up"
-last_modified_at: 2020-11-20T14:40:02-05:00
+last_modified_at: 2020-11-20T10:40:02-05:00
 categories:
   - thm
 author_profile: false
