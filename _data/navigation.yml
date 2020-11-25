@@ -78,7 +78,9 @@ docs:
       - title: "The Blob Blog"
         url: /thm/theblobblog/
       - title: "Misguided Ghosts"
-        url: /thm/misguided_ghosts/                      
+        url: /thm/misguided_ghosts/ 
+      - title: "Convert My Video"
+        url: /thm/convertmyvideo/                          
   # - title: Cryptopals
   #   children:
   #     - title: "Set 1"
