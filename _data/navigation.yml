@@ -80,7 +80,9 @@ docs:
       - title: "Misguided Ghosts"
         url: /thm/misguided_ghosts/ 
       - title: "Convert My Video"
-        url: /thm/convertmyvideo/                          
+        url: /thm/convertmyvideo/
+      - title: "BookStore"
+        url: /thm/bookstore/                            
   # - title: Cryptopals
   #   children:
   #     - title: "Set 1"
