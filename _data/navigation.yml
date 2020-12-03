@@ -84,7 +84,9 @@ docs:
       - title: "BookStore"
         url: /thm/bookstore/
       - title: "Internal"
-        url: /thm/internal/                             
+        url: /thm/internal/
+      - title: "Unbaked Pie"
+        url: /thm/unbaked_pie/                              
   # - title: Cryptopals
   #   children:
   #     - title: "Set 1"
