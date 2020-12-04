@@ -265,7 +265,7 @@ exit
 Here we can clearly see that the user was trying to login into 172.17.0.1 using SSH as user ramsey. And as this is a docker container, that IP is the IP address of the host. But the SSH was not open on all interfaces otherwise we would have seen on the output of the nmap.
 
 ### Port Scan using nc
-As there was no nmap on the docker container, I used nmap for scanning for open ports.
+As there was no nmap on the docker container, I used netcat for scanning for open ports.
 ```console
 root@8b39a559b296:~# nc -zv 172.17.0.1 1-65535
 ip-172-17-0-1.eu-west-1.compute.internal [172.17.0.1] 5003 (?) open
