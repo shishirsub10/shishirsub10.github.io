@@ -86,7 +86,10 @@ docs:
       - title: "Internal"
         url: /thm/internal/
       - title: "Unbaked Pie"
-        url: /thm/unbaked_pie/                              
+        url: /thm/unbaked_pie/
+      - title: "Motunui"
+        url: /thm/motunui/   
+                                    
   # - title: Cryptopals
   #   children:
   #     - title: "Set 1"
