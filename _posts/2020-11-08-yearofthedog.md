@@ -370,7 +370,7 @@ File called **work_analysis** looks interesting.
 
 ```console
 www-data@year-of-the-dog:/home/dylan$ grep -Ri dylan 2>/dev/null
-work_analysis:Sep  5 20:52:57 staging-server sshd[39218]: Invalid user dylanLabr4d0rs4L1f3 from 192.168.1.142 port 45624
+work_analysis:Sep  5 20:52:57 staging-server sshd[39218]: Invalid user dylanLa**********f3 from 192.168.1.142 port 45624
 work_analysis:Sep  5 20:53:03 staging-server sshd[39218]: Failed password for invalid user dylanLa********1f3 from 192.168.1.142 port 45624 ssh2
 work_analysis:Sep  5 20:53:04 staging-server sshd[39218]: Connection closed by invalid user dylanLa***********f3 192.168.1.142 port 45624 [preauth]
 .gitconfig:     name = Dylan
