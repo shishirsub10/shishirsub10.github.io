@@ -94,7 +94,9 @@ docs:
       - title: "Jeff"
         url: /thm/jeff/
       - title: "Overpass 3"
-        url: /thm/overpass3/     
+        url: /thm/overpass3/
+      - title: "Battery"
+        url: /thm/battery/     
                                     
   # - title: Cryptopals
   #   children:
