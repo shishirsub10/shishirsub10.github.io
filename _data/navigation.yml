@@ -37,8 +37,12 @@ docs:
         url: /htb/feline/
       - title: "Unbalanced"
         url: /htb/unbalanced/
+      - title: "Compromised"
+        url: /htb/compromised/        
       - title: "Passage"
         url: /htb/passage/
+      - title: "Doctor"
+        url: /htb/doctor/
   - title: TryHackMe
     children:
       - title: "Harder"
