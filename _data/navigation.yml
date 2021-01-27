@@ -100,7 +100,9 @@ docs:
       - title: "Overpass 3"
         url: /thm/overpass3/
       - title: "Battery"
-        url: /thm/battery/     
+        url: /thm/battery/
+      - title: "Sustah"
+        url: /thm/sustah/       
                                     
   # - title: Cryptopals
   #   children:
