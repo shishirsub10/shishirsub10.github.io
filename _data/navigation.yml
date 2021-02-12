@@ -104,7 +104,9 @@ docs:
       - title: "Sustah"
         url: /thm/sustah/
       - title: "Madeye's Castle"
-        url: /thm/madeyescastle/        
+        url: /thm/madeyescastle/
+      - title: "En-Pass"
+        url: /thm/enpass/         
                                     
   # - title: Cryptopals
   #   children:
