@@ -106,7 +106,9 @@ docs:
       - title: "Madeye's Castle"
         url: /thm/madeyescastle/
       - title: "En-Pass"
-        url: /thm/enpass/         
+        url: /thm/enpass/
+      - title: "The Great Escape"
+        url: /thm/thegreatescape/            
                                     
   # - title: Cryptopals
   #   children:
