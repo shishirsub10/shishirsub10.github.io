@@ -109,7 +109,9 @@ docs:
         url: /thm/enpass/
       - title: "The Great Escape"
         url: /thm/thegreatescape/            
-                                    
+      - title: "Hacker of the Hill"
+        url: /thm/hackerofthehill/  
+
   # - title: Cryptopals
   #   children:
   #     - title: "Set 1"
