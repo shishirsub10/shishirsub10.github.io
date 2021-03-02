@@ -43,6 +43,8 @@ docs:
         url: /htb/passage/
       - title: "Doctor"
         url: /htb/doctor/
+      - title: "Academy"
+        url: /htb/academy/
   - title: TryHackMe
     children:
       - title: "Harder"
