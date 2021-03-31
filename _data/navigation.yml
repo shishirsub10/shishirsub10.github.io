@@ -112,7 +112,9 @@ docs:
       - title: "The Great Escape"
         url: /thm/thegreatescape/            
       - title: "Hacker of the Hill"
-        url: /thm/hackerofthehill/  
+        url: /thm/hackerofthehill/
+      - title: "Debug"
+        url: /thm/debug/   
 
   # - title: Cryptopals
   #   children:
