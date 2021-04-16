@@ -47,7 +47,7 @@ docs:
         url: /htb/academy/
   - title: TryHackMe
     children:
-      - title: "Coconut Stories"
+      - title: "Cooctus Stories"
         url: /thm/coconut/  
       - title: "Harder"
         url: /thm/harder/
