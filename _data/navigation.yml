@@ -25,6 +25,10 @@ docs:
   #       url: /docker/docker_1/
   - title: HackTheBox
     children:
+      - title: "Active"
+        url: /htb/active/
+      - title: "Forest"
+        url: /htb/forest/
       - title: "Quick"
         url: /htb/quick/
       - title: "Admirer"
