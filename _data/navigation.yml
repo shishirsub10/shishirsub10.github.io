@@ -29,6 +29,8 @@ docs:
         url: /htb/active/
       - title: "Forest"
         url: /htb/forest/
+      - title: "Openadmin"
+        url: /htb/openadmin/
       - title: "Quick"
         url: /htb/quick/
       - title: "Admirer"
