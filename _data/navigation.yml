@@ -31,6 +31,8 @@ docs:
         url: /htb/forest/
       - title: "Openadmin"
         url: /htb/openadmin/
+      - title: "Writeup"
+        url: /htb/writeup/
       - title: "Quick"
         url: /htb/quick/
       - title: "Admirer"
