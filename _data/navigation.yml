@@ -25,6 +25,8 @@ docs:
   #       url: /docker/docker_1/
   - title: HackTheBox
     children:
+      - title: "Unobtanium"
+        url: /htb/unobtanium/
       - title: "Active"
         url: /htb/active/
       - title: "Forest"
