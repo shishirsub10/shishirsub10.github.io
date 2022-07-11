@@ -57,6 +57,8 @@ docs:
         url: /htb/academy/
   - title: TryHackMe
     children:
+      - title: "Island Orchestration"
+        url: /thm/island_orchestration/ 
       - title: "Fusion Corp"
         url: /thm/fusioncorp/ 
       - title: "Mustacchio"
