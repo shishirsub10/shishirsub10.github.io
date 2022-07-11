@@ -24,8 +24,6 @@ tags:
 <script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="reddevil2020" data-description="Support me on Buy me a coffee!"  data-color="#FFDD00" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
 
 
-![image](/assets/images/thm/islandorchestration/Pasted image 20220711173446.png)
-
   
 [Island Orchestration](https://tryhackme.com/room/islandorchestration) is a medium rated room in Tryhackme by [tryhackme](https://tryhackme.com/p/tryhackme), [cmnatic](https://tryhackme.com/p/cmnatic), [timtaylor](https://tryhackme.com/p/timtaylor) and [congon4tor](https://tryhackme.com/p/congon4tor). Using the LFI on the webserver, we grab the token for the serviceaccount of the pod running inside a k8s cluster and using that token we read the flag.
 
