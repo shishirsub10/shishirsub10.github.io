@@ -328,10 +328,6 @@ ENV FLASK_APP=main.py
 
 RUN pip3 install -r requirements.txt
 
-RUN chown -R nobody:nobody /app
-RUN chmod 700 -R /app
-USER nobody
-
 CMD ["flask","run", "--host=0.0.0.0","--port=8000"]
 ```
 I have built the image and pushed it to dockerhub. Please reference the image on your deployment using `shishirsub10/k8s-security-demo:root` tag.
