@@ -9,6 +9,13 @@ main:
     url: /about/
 
 docs:
+  - title: Kubernetes Security
+    children:
+      - title: "Security Contexts"
+        url: /kubernetes/kubernetes_security/
+      - title: "Network Policies"
+        url: /kubernetes/kubernetes_security_part_2/
+
   - title: Linux
     children:
       - title: "Find Command"
